@@ -1,0 +1,13 @@
+body {
+  background-color: #0083cb;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('CSS/FONTS/Peace_Sans_Webfont.ttf');
+}
+
+.login h1{
+  color: white;
+  font-family: 'Bold';
+}
