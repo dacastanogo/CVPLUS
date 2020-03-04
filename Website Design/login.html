@@ -6,8 +6,27 @@
     <link rel="stylesheet" type="text/css" href="CSS/login.css">
   </head>
   <body>
-    <div class="login">
-      <h1>TIME TO SHOW THEM <br>WHAT YOU'VE GOT</h1>
+    <header>
+      <div class="h_container">
+        <p>Login</p>
+        <p>About us</p>
+      </div>
+    </header>
+      <div class="login">
+        <img src="CSS/IMAGES/cv_example.png">
+        <h1 id="slogan">TIME TO SHOW THEM <br><span>WHAT YOU'VE GOT</span></h1>
     </div>
+
+    <div class="container2">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
   </body>
 </html>
