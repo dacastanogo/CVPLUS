@@ -91,6 +91,16 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   border-radius: 0.12em;
 }
 
+.slogans p{
+  font-family: 'Body-medium';
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+  width: 600px;
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+
 .login-box{
   font-family: 'Body-medium';
   color: white;
@@ -119,6 +129,10 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   margin-bottom: 20px;
 }
 
+#pwd{
+  margin-bottom: 20px;
+}
+
 .login-box button{
   width: 70%;
   background-color: #0083cb;
@@ -143,10 +157,13 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   font-family: 'Body-medium';
   font-size: 15px;
   color: white;
+  transform: translateY(500%);
+  text-align: center;
 }
 
 .section2{
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -195,7 +212,6 @@ src: url('./FONTS/Montserrat-Medium.ttf');
 .register-section img{
   width: 50%;
   max-width: 200%;
-  padding-bottom: 50px;
 }
 
 .register-box{
