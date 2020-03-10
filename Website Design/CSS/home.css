@@ -24,16 +24,19 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   border-bottom: 3px solid white;
   color: white;
   font-size: 20px;
+  z-index: 3;
+  position: relative;
 }
 
 .main-section{
-  padding-top: 30px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: center;
   background: linear-gradient(180deg, rgba(11,76,110,1) 0%, rgba(0,131,203,1) 65%);
+  padding-bottom: 100px;
 }
 
 .side-menu {
@@ -46,7 +49,6 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
-  margin-top: 67px;
 }
 
 .side-menu a {
@@ -64,5 +66,17 @@ src: url('./FONTS/Montserrat-Medium.ttf');
 
 .side-sections{
 transform: translateY(50%);
+}
 
+.page-preview-container{
+  width: 612px;
+  height: 792px;
+  background-color: white;
+}
+
+.page-name p{
+  color: white;
+  font-family: 'Body-medium';
+  font-size: 40px;
+  text-align: center;
 }
