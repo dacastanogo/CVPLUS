@@ -1,0 +1,68 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('./FONTS/Peace_Sans_Webfont.ttf');
+}
+
+@font-face {
+font-family: 'Body-medium';
+src: url('./FONTS/Montserrat-Medium.ttf');
+}
+
+.h_container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #0b4c6e;
+  font-family: 'Body-medium';
+  border-bottom: 3px solid white;
+  color: white;
+  font-size: 20px;
+}
+
+.main-section{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(11,76,110,1) 0%, rgba(0,131,203,1) 65%);
+}
+
+.side-menu {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 67px;
+}
+
+.side-menu a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  font-family: 'Bold';
+}
+
+.side-menu a:hover {
+  color: #efe037;
+}
+
+.side-sections{
+transform: translateY(50%);
+
+}
