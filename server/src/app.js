@@ -13,6 +13,5 @@ app.use(express.json());
 app.use('/api/login', require('./routes/login'))
 app.use('/api/home', require('./routes/home'))
 app.use('/api/edit', require('./routes/edit'))
-app.use('/api/create', require ('./routes/create'))
 
 module.exports = app;
