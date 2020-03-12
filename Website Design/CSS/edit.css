@@ -38,13 +38,14 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   background: linear-gradient(180deg, rgba(11,76,110,1) 0%, rgba(0,131,203,1) 65%);
   padding-bottom: 100px;
 }
 
 .side-menu {
+  display: none;
   height: 100%;
   width: 300px;
   position: fixed;
@@ -87,6 +88,7 @@ transform: translateY(50%);
 }
 
 .template-section1{
+  padding-left: 1%;
   height: 227px;
   width: 612px;
   background: linear-gradient(90deg, rgba(250,175,64,1) 0%, rgba(249,236,49,1) 100%);
@@ -114,7 +116,8 @@ transform: translateY(50%);
 .template-section1 #profile{
   color: white;
   font-family: 'Body-medium';
-  font-size: 20px;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .template-section2{
@@ -290,4 +293,20 @@ top: -8px;
 .contact-info p{
   margin-top: 0px;
   margin: 0px;
+}
+
+.edit-elements, .edit-elements2{
+  text-align: center;
+}
+
+.edit-elements h1{
+  font-family: 'Bold';
+  color: white;
+  font-size: 30px;
+}
+
+.edit-elements2 h1{
+  font-family: 'Bold';
+  color: white;
+  font-size: 30px;
 }
