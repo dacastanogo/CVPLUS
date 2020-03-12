@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home-CVPLUS</title>
-    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <title>Edit your CV</title>
+    <link rel="stylesheet" type="text/css" href="CSS/edit.css">
   </head>
   <body>
     <header>
@@ -14,14 +14,28 @@
     </header>
     <div class="side-menu">
       <div class="side-sections">
-        <a href="#">Home</a>
-        <a href="./edit.html">Edit</a>
+        <a href="./home.html">Home</a>
+        <a href="#">Edit</a>
         <a href="#">Share (Coming Soon!)</a>
         <a href="#">Download (Coming Soon!)</a>
         <a href="./login.html">Logout</a>
       </div>
     </div>
     <div class="main-section">
+      <div class="edit-elements">
+        <div class="section1-edits">
+          <label for="cvname"><b>Name<br></b></label>
+          <input type="text" name="edit-name" value="">
+          <label for="cvtitle"><b>Title<br></b></label>
+          <input type="text" name="edit-title" value="">
+          <label for="cvprofile"><b>Profile<br></b></label>
+          <input type="text" id="profile-edit" name="edit-profile" value="">
+        </div>
+        <div class="section2-edits">
+          <label for=cv"><b>Profile<br></b></label>
+          <input type="text" id="profile-edit" name="edit-profile" value="">
+        </div>
+      </div>
       <div class="page-preview">
         <div class="template-view">
           <div class="template-section1">
@@ -82,9 +96,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="page-name">
-            <p>Resume 1</p>
         </div>
       </div>
     </div>
