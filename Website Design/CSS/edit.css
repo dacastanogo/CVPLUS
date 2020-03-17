@@ -105,6 +105,7 @@ transform: translateY(50%);
   color: white;
   font-family: 'Bebas';
   font-size: 50px;
+  padding-top: 10px;
 }
 
 .template-section1 #title{
@@ -324,12 +325,46 @@ top: -8px;
   padding: 0.35em 1.2em;
   font-size: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.edit-elements input{
+    font-family: 'Body-medium';
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 15px;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    color: white;
+
 }
 
 .edit-elements button:hover{
   color: black;
   background-color: white;
 }
+
+.edit-elements label{
+  color: white;
+  font-family: 'Body-medium';
+  margin-bottom: 10px;
+}
+
+.edit-elements2 input{
+    font-family: 'Body-medium';
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 15px;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    color: white;
+  }
 
 .edit-elements2 button{
   width: 50%;
@@ -344,9 +379,63 @@ top: -8px;
   padding: 0.35em 1.2em;
   font-size: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .edit-elements2 button:hover{
   color: black;
   background-color: white;
+}
+
+.edit-elements2 label{
+  color: white;
+  font-family: 'Body-medium';
+  margin-bottom: 10px;
+}
+
+.zoom1{
+    height: 223px;
+    width: 612px;
+    background-color: rgba(250,175,64,1);
+    margin-top: 20px;
+  }
+
+.gradient{
+  height: 223px;
+  width: 612px;
+  background: linear-gradient(266deg, rgba(0,0,0,1) 50%, rgba(0,131,203,0) 100%);
+}
+
+#zoomnameyear1{
+  color: white;
+  font-family: 'Bebas';
+  font-size: 20px;
+  right: -150px;
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#zoomposition1{
+  color: white;
+  font-family: 'Bebas';
+  font-size: 30px;
+  margin-top: -15px;
+  position: relative;
+  text-align: center;
+  right: -150px;
+}
+
+#zoombrief1{
+  color: white;
+  font-family: 'Body-medium';
+  font-size: 15px;
+  text-align: justify;
+  right: -300px;
+  position: relative;
+}
+
+
+#themepicker{
+  margin-top: 15px;
 }

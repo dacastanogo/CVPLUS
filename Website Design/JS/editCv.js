@@ -19,6 +19,11 @@ window.addEventListener('load', () => {
   let pcompany2Tag = document.getElementById('pcompany2')
   let pyear2Tag = document.getElementById('pyear2')
   let pdescription2Tag = document.getElementById('pdescription2')
+  let zoomnameyear1Tag = document.getElementById('zoomnameyear1')
+  let zoomposition1Tag = document.getElementById('zoomposition1')
+  let zoombrief1Tag = document.getElementById('zoombrief1')
+
+
 
   const editName = document.getElementById("edit-name")
   const saveName = document.getElementById("save-name")
@@ -58,6 +63,16 @@ window.addEventListener('load', () => {
   const savepyear2 = document.getElementById("save-proyear2")
   const editpdescription2 = document.getElementById("probrief2-edit")
   const savepdescription2 = document.getElementById("save-probrief2")
+  const editcpandyear1 = document.getElementById("cpandyear1-edit")
+  const savecpandyear1 = document.getElementById("save-cpandyear1")
+  const editztitle1 = document.getElementById("ztitle1-edit")
+  const saveztitle1 = document.getElementById("save-ztitle1")
+  const editzbrief1 = document.getElementById("zbrief1-edit")
+  const savezbrief1 = document.getElementById("save-zbrief1")
+
+
+var select = document.getElementById('themepicker');
+var selected = select.options[select.selectedIndex].text;
 
   saveName.addEventListener('click', () => {
     nameTag.innerHTML = editName.value
@@ -131,6 +146,18 @@ window.addEventListener('load', () => {
     pdescription2Tag.innerHTML = editpdescription2.value
   })
 
+  savecpandyear1.addEventListener('click', () => {
+    zoomnameyear1Tag.innerHTML = editcpandyear1.value
+  })
+
+  saveztitle1.addEventListener('click', () => {
+    zoomposition1Tag.innerHTML = editztitle1.value
+  })
+
+  savezbrief1.addEventListener('click', () => {
+    zoombrief1Tag.innerHTML = editzbrief1.value
+  })
+
   saveProfile.addEventListener('click', () => {
     let lengthProfile = editProfile.value.length
     if (lengthProfile > 300) {
@@ -148,3 +175,11 @@ window.addEventListener('load', () => {
       profileTag.innerHTML = editProfile.value
   })
 })
+
+function color(){
+     if(selected === 'Electric'){
+       function changeHeadingBg(black){
+     document.getElementById("heading").style.background = black;
+ }
+      }
+}
