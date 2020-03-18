@@ -56,6 +56,22 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
   padding-top: 20px;
 }
 
+.side-name{
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.side-name h1{
+  font-size: 25px;
+  font-family: 'Bold';
+}
+
+.side-name p{
+  font-size: 20px;
+  font-family: 'Body-medium';
+  margin-top: -10px;
+}
 .side-menu a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;

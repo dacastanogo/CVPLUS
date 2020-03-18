@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <title>Edit your CV</title>
     <link rel="stylesheet" type="text/css" href="CSS/edit.css">
-    <script type="text/javascript" src="./JS/editCv.js">
-
-    </script>
+    <script type="text/javascript" src="./JS/editCv.js"></script>
   </head>
   <body>
     <header>
@@ -156,15 +154,16 @@
         <div class="theme-selector">
           <label>Choose a Theme<br></label>
           <select id="themepicker">
-            <option value="1">Dawn</option>
-            <option value="2">Electric</option>
-            <option value="3">Midnight</option>
+            <option value="linear-gradient(90deg, rgba(250,175,64,1) 0%, rgba(249,236,49,1) 100%)">Dawn</option>
+            <option value="linear-gradient(90deg, rgba(240,67,58,1) 22%, rgba(130,3,51,1) 91%)">Sunset</option>
+            <option value="linear-gradient(90deg, rgba(41,51,96,1) 22%, rgba(102,66,122,1) 91%)">Midnight</option>
           </select>
+          <button onclick="colorbg()">Save</button>
         </div>
       </div>
       <div class="page-preview">
         <div class="template-view">
-          <div class="template-section1">
+          <div id="template-section1" class="template-section1 editable">
             <div class="main-info">
               <p id="name">name</p>
               <p id="title">title</p>
@@ -201,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="template-section4">
+          <div class="template-section4 editable">
             <p id="contitle">Contact Info</p>
             <div class="contact-info">
               <div class="contact-email">
@@ -223,7 +222,7 @@
             </div>
           </div>
         </div>
-        <div class="zoom1">
+        <div class="zoom1 editable">
           <div class="gradient">
             <p id="zoomnameyear1">Company and year1</p>
             <h1 id="zoomposition1">Position1</h1>

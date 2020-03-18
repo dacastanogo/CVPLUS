@@ -303,13 +303,21 @@ top: -8px;
 .edit-elements h1{
   font-family: 'Body-medium';
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  background: linear-gradient(90deg, rgba(250,175,64,1) 0%, rgba(249,236,49,1) 100%);
+  width: auto;
+  padding: 8px;
+  border-radius: 0.12em;
 }
 
 .edit-elements2 h1{
   font-family: 'Body-medium';
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  background: linear-gradient(90deg, rgba(250,175,64,1) 0%, rgba(249,236,49,1) 100%);
+  width: auto;
+  padding: 8px;
+  border-radius: 0.12em;
 }
 
 .edit-elements button{
@@ -396,7 +404,7 @@ top: -8px;
 .zoom1{
     height: 223px;
     width: 612px;
-    background-color: rgba(250,175,64,1);
+    background-color: rgba(249,236,49,1);
     margin-top: 20px;
   }
 

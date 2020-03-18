@@ -71,9 +71,6 @@ window.addEventListener('load', () => {
   const savezbrief1 = document.getElementById("save-zbrief1")
 
 
-var select = document.getElementById('themepicker');
-var selected = select.options[select.selectedIndex].text;
-
   saveName.addEventListener('click', () => {
     nameTag.innerHTML = editName.value
   })
@@ -176,10 +173,14 @@ var selected = select.options[select.selectedIndex].text;
   })
 })
 
-function color(){
-     if(selected === 'Electric'){
-       function changeHeadingBg(black){
-     document.getElementById("heading").style.background = black;
- }
-      }
+function colorbg(){
+  var select = document.getElementById('themepicker');
+  var color = select.options[select.selectedIndex].value;
+  var x = document.getElementsByClassName("editable");
+  var i;
+  for(i = 0; i < x.length; i++){
+    x[i].style.background = color;
+  }
+
+  //document.getElementsByClassName("editable").style.background = color;
 }
