@@ -12,6 +12,11 @@ const userSchema = new Schema({
         trim: true,
         unique: true
     },
+    userPassword: {
+        type: String,
+        required: true,
+        trim: true
+    }
 });
 
 
