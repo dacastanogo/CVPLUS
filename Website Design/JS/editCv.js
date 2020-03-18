@@ -70,7 +70,11 @@ window.addEventListener('load', () => {
   const editzbrief1 = document.getElementById("zbrief1-edit")
   const savezbrief1 = document.getElementById("save-zbrief1")
 
-
+/*
+editName.addEventListener('change', (event) => {
+  console.log('Hola jajaj')
+  console.log(event.target.value)
+})
   saveName.addEventListener('click', () => {
     nameTag.innerHTML = editName.value
   })
@@ -170,17 +174,32 @@ window.addEventListener('load', () => {
 
     }
       profileTag.innerHTML = editProfile.value
-  })
+  })*/
 })
 
 function colorbg(){
   var select = document.getElementById('themepicker');
   var color = select.options[select.selectedIndex].value;
   var x = document.getElementsByClassName("editable");
-  var i;
-  for(i = 0; i < x.length; i++){
+  for( let i = 0; i < x.length; i++){
     x[i].style.background = color;
   }
 
   //document.getElementsByClassName("editable").style.background = color;
+}
+
+function changetxt(){
+  var changable = document.getElementsByClassName("tochange");
+  var changer = document.getElementsByClassName("changer");
+
+  for (let i = 0; i < changer.length; i++) {
+    if (changer[i].value.length == 0) {
+      console.log('HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+      continue
+    }
+
+    changable[i].innerHTML = changer[i].value
+    console.log(changable[i])
+    console.log(changer)
+  }
 }

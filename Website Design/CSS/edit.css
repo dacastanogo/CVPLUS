@@ -399,6 +399,11 @@ top: -8px;
   color: white;
   font-family: 'Body-medium';
   margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.changer{
+  margin-bottom: 20px;
 }
 
 .zoom1{
@@ -446,4 +451,10 @@ top: -8px;
 
 #themepicker{
   margin-top: 15px;
+}
+
+#save-all{
+  font-size: 20px;
+  width: 70%;
+
 }
