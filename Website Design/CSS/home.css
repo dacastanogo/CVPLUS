@@ -171,13 +171,13 @@ top: -8px;
   margin: 0px;
 }
 
-.template-section2 #education1, #education2{
+.template-section2 #major1, #major2{
   color: white;
   font-family: 'Bebas';
   font-size: 40px;
 }
 
-.template-section2 #educationyear1, #educationyear2{
+.template-section2 #yearMajorFinalization1, #yearMajorFinalization2{
   color: white;
   font-family: 'Bebas';
   font-size: 20px;
@@ -220,37 +220,37 @@ top: -8px;
     margin: 0px;
 }
 
-.project1 #pname1 {
+.project1 #projectName1 {
   color: white;
   font-family: 'Bebas';
   font-size: 30px;
 }
 
-.project1 #pcompany1, #pyear1{
+.project1 #projectCompany1, #projectDate1{
   color: white;
   font-family: 'Bebas';
   font-size: 20px;
 }
 
-.project1 #pdescription1{
+.project1 #projectBrief1{
   color: white;
   font-family: 'Body-medium';
   font-size: 15px;
 }
 
-.project2 #pname2 {
+.project2 #projectName2 {
   color: white;
   font-family: 'Bebas';
   font-size: 30px;
 }
 
-.project2 #pcompany2, #pyear2{
+.project2 #projectCompany2, #projectDate2{
   color: white;
   font-family: 'Bebas';
   font-size: 20px;
 }
 
-.project2 #pdescription2{
+.project2 #projectBrief2{
   color: white;
   font-family: 'Body-medium';
   font-size: 15px;
@@ -291,13 +291,13 @@ top: -8px;
   margin-top: -10px;
 }
 
-#user-email, #user-phone{
+#email, #phone{
   color: white;
   font-size: 12px;
   font-family: 'Body-medium';
 }
 
-#user-github, #user-linkedin{
+#github, #linkedin{
   color: white;
   font-size: 12px;
   font-family: 'Body-medium';
@@ -306,4 +306,88 @@ top: -8px;
 .contact-info p{
   margin-top: 0px;
   margin: 0px;
+}
+
+.zoom1{
+  height: 223px;
+  width: 612px;
+  background-color: rgba(249,236,49,1);
+  margin-top: 20px;
+  position: relative;
+  top: -362px;
+  display: none;
+}
+
+.gradient{
+height: 223px;
+width: 612px;
+background: linear-gradient(266deg, rgba(0,0,0,1) 50%, rgba(0,131,203,0) 100%);
+}
+
+#zoomCompanyAndYear1{
+color: white;
+font-family: 'Bebas';
+font-size: 20px;
+right: -150px;
+position: relative;
+padding-top: 10px;
+text-align: center;
+}
+
+#zoomPosition1{
+color: white;
+font-family: 'Bebas';
+font-size: 30px;
+margin-top: -15px;
+position: relative;
+text-align: center;
+right: -150px;
+}
+
+#zoomDescription1{
+color: white;
+font-family: 'Body-medium';
+font-size: 15px;
+text-align: justify;
+right: -300px;
+position: relative;
+}
+
+.zoom2{
+height: 223px;
+width: 612px;
+background-color: rgba(249,236,49,1);
+margin-top: 20px;
+position: relative;
+top: -605px;
+display: none;
+}
+
+#zoomCompanyAndYear2{
+color: white;
+font-family: 'Bebas';
+font-size: 20px;
+right: -150px;
+position: relative;
+padding-top: 10px;
+text-align: center;
+}
+
+#zoomPosition2{
+color: white;
+font-family: 'Bebas';
+font-size: 30px;
+margin-top: -15px;
+position: relative;
+text-align: center;
+right: -150px;
+}
+
+#zoomDescription2{
+color: white;
+font-family: 'Body-medium';
+font-size: 15px;
+text-align: justify;
+right: -300px;
+position: relative;
 }
