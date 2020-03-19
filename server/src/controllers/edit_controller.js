@@ -13,8 +13,8 @@ editCtrl.getCv = async (req, res) => {
 }
 
 editCtrl.postNewCv = async (req, res) => {
-    const { name, age, userThumbnailPath, title, profile, 
-        major, yearMajorFinalization, projectName1, 
+    const { name, title, profile, 
+        major1, yearMajorFinalization1, major2, yearMajorFinalization2, projectName1, 
         projectDate1, projectBrief1, projectCompany1, projectName2, 
         projectDate2, projectBrief2, projectCompany2, phone, email, 
         github, linkedin, twitter, zoomCompanyAndYear1,
@@ -22,12 +22,12 @@ editCtrl.postNewCv = async (req, res) => {
         zoomDescription1, zoomDescription2}  = req.body;
     const newCv = new cvModel({
         name: name,
-        age: age,
-        userThumbnailPath: userThumbnailPath,
         title: title,
         profile: profile,
-        major: major,
-        yearMajorFinalization: yearMajorFinalization,
+        major1: major1,
+        yearMajorFinalization1: yearMajorFinalization1,
+        major2: major2,
+        yearMajorFinalization2: yearMajorFinalization2,
         projectName1: projectName1,
         projectDate1: projectDate1,
         projectBrief1: projectBrief1,

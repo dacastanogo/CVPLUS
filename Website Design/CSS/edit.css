@@ -448,6 +448,42 @@ top: -8px;
   position: relative;
 }
 
+.zoom2{
+  height: 223px;
+  width: 612px;
+  background-color: rgba(249,236,49,1);
+  margin-top: 20px;
+}
+
+#zoomnameyear2{
+  color: white;
+  font-family: 'Bebas';
+  font-size: 20px;
+  right: -150px;
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#zoomposition2{
+  color: white;
+  font-family: 'Bebas';
+  font-size: 30px;
+  margin-top: -15px;
+  position: relative;
+  text-align: center;
+  right: -150px;
+}
+
+#zoombrief2{
+  color: white;
+  font-family: 'Body-medium';
+  font-size: 15px;
+  text-align: justify;
+  right: -300px;
+  position: relative;
+}
+
 
 #themepicker{
   margin-top: 15px;
