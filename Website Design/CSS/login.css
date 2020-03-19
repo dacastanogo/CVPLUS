@@ -356,3 +356,8 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   width: 200px;
   height: auto;
 }
+
+.aboutus p{
+  font-family: 'Body-medium';
+  text-align: center;
+}
