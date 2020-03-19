@@ -6,6 +6,7 @@ const path = require('path');
 const passport = require('passport')
 const session = require('express-session');
 const flash = require('connect-flash');
+
 //Server settings
 //app.set('views', path.join(__dirname, 'views'));
 //app.engine('ejs', engine);
