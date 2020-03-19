@@ -192,14 +192,22 @@ function changetxt(){
   var changable = document.getElementsByClassName("tochange");
   var changer = document.getElementsByClassName("changer");
 
-  for (let i = 0; i < changer.length; i++) {
-    if (changer[i].value.length == 0) {
-      console.log('HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+  for (let i = 0; i < changer.length; i++){
+    console.log(changer[i].value, changer[i].name)
+    if (changer[i].value.length == 0){
       continue
     }
 
     changable[i].innerHTML = changer[i].value
-    console.log(changable[i])
-    console.log(changer)
   }
+}
+
+function createcv(){
+  let changer = document.getElementsByClassName("changer");
+  console.log(changer)
+  let objfetch = {}
+  for (let i = 0; i < changer.length; i++){
+    objfetch.changer[i].name =changer[i].value
+  }
+  console.log(objfetch)
 }

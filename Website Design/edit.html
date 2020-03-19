@@ -28,53 +28,53 @@
           <h1>Profile Section</h1>
           <div>
             <label for="cvname"><b>Name<br></b></label>
-            <input class="changer" type="text" name="edit-name" value="" id="edit-name">
+            <input class="changer" type="text" name="name" value="" id="edit-name">
           </div>
           <div>
             <label for="cvtitle"><b>Title<br></b></label>
-            <input class="changer" type="text" name="edit-title" value="" id="edit-title">
+            <input class="changer" type="text" name="title" value="" id="edit-title">
           </div>
           <div>
             <label for="cvprofile"><b>Profile<br></b></label>
-            <input class="changer" type="text" id="profile-edit" name="edit-profile" value="">
+            <input class="changer" type="text" id="profile-edit" name="profile" value="">
           </div>
         </div>
         <div class="section2-edits">
           <h1>Education Section</h1>
           <div>
             <label><b>Education Field 1<br></b></label>
-            <input class="changer" type="text" id="eduname1-edit" name="edit-eduname1" value="">
+            <input class="changer" type="text" id="eduname1-edit" name="major" value="">
           </div>
           <div>
             <label><b>Education Year 1<br></b></label>
-            <input class="changer" type="text" id="eduyear1-edit" name="edit-edunyear1" value="">
+            <input class="changer" type="text" id="eduyear1-edit" name="yearMajorFinalization" value="">
           </div>
           <div>
             <label><b>Education Name 2<br></b></label>
-            <input class="changer" type="text" id="eduname2-edit" name="edit-eduname2" value="">
+            <input class="changer" type="text" id="eduname2-edit" name="major2" value="">
           </div>
           <div>
             <label><b>Education Year 2<br></b></label>
-            <input class="changer" type="text" id="eduyear2-edit" name="edit-eduyear2" value="">
+            <input class="changer" type="text" id="eduyear2-edit" name="yearMajorFinalization2" value="">
           </div>
         </div>
         <div class="section4-edits">
           <h1>Contact Info</h1>
           <div>
             <label><b>Email<br></b></label>
-            <input class="changer" type="text" id="email-edit" name="edit-email" value="">
+            <input class="changer" type="text" id="email-edit" name="email" value="">
           </div>
           <div>
             <label><b>Phone<br></b></label>
-            <input class="changer" type="text" id="phone-edit" name="edit-phone" value="">
+            <input class="changer" type="text" id="phone-edit" name="phone" value="">
           </div>
           <div>
             <label><b>Github<br></b></label>
-            <input class="changer" type="text" id="github-edit" name="c" value="">
+            <input class="changer" type="text" id="github-edit" name="github" value="">
           </div>
           <div>
             <label><b>LinkedIn<br></b></label>
-            <input class="changer" type="text" id="linkedin-edit" name="edit-linkedin" value="">
+            <input class="changer" type="text" id="linkedin-edit" name="linkedin" value="">
           </div>
         </div>
       </div>
@@ -83,15 +83,15 @@
           <h1>Projects Section</h1>
           <div>
             <label><b>Project Name 1<br></b></label>
-            <input class="changer" type="text" id="proname1-edit" name="edit-proname1" value="">
+            <input class="changer" type="text" id="proname1-edit" name="projectName1" value="">
           </div>
           <div>
             <label><b>Company Name 1<br></b></label>
-            <input class="changer" type="text" id="companame1-edit" name="edit-companame1" value="">
+            <input class="changer" type="text" id="companame1-edit" name="projectCompany1" value="">
           </div>
           <div>
             <label><b>Project Year 1<br></b></label>
-            <input class="changer" type="text" id="proyear1-edit" name="edit-proyear1" value="">
+            <input class="changer" type="text" id="proyear1-edit" name="projectDate1" value="">
           </div>
           <div>
             <label><b>Project Brief 1<br></b></label>
@@ -99,15 +99,15 @@
           </div>
           <div>
             <label><b>Project Name 2<br></b></label>
-            <input class="changer" type="text" id="proname2-edit" name="edit-proname2" value="">
+            <input class="changer" type="text" id="proname2-edit" name="projectName2" value="">
           </div>
           <div>
             <label><b>Company Name 2<br></b></label>
-            <input class="changer" type="text" id="companame2-edit" name="edit-companame2" value="">
+            <input class="changer" type="text" id="companame2-edit" name="projectCompany2" value="">
           </div>
           <div>
             <label><b>Project Year 2<br></b></label>
-            <input class="changer" type="text" id="proyear2-edit" name="edit-proyear2" value="">
+            <input class="changer" type="text" id="proyear2-edit" name="projectDate2" value="">
           </div>
           <div>
             <label><b>Project Brief 2<br></b></label>
@@ -138,7 +138,8 @@
           </select>
           <button onclick="colorbg()">Save</button>
         </div>
-        <button id="save-all" onclick="changetxt()"> save<br>changes</button>
+        <button id="update-all" onclick="changetxt()"> update<br>information</button>
+        <button id="save-all" onclick="createcv()"> save<br>changes</button>
       </div>
       <div class="page-preview">
         <div class="template-view">

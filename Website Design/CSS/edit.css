@@ -453,7 +453,7 @@ top: -8px;
   margin-top: 15px;
 }
 
-#save-all{
+#save-all, #update-all{
   font-size: 20px;
   width: 70%;
 
