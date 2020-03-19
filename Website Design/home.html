@@ -57,14 +57,14 @@
                 <p class="tochange" id="projectCompany1">company</p>
                 <p class="tochange" id="projectDate1">year</p>
                 <p class="tochange" id="projectBrief1">description</p>
-                <button></button>
+                <button onclick="display1()" class="show-zoom"><div class="button-text">+</div></button>
               </div>
               <div class="project2">
                 <p class="tochange" id="projectName2">name</p>
                 <p class="tochange" id="projectCompany2">company</p>
                 <p class="tochange" id="projectDate2">year</p>
                 <p class="tochange" id="projectBrief2">description</p>
-                <button></button>
+                <button onclick="display2()" class="show-zoom"><div class="button-text">+</div></button>
               </div>
             </div>
           </div>
@@ -89,18 +89,20 @@
               </div>
             </div>
           </div>
-          <div class="zoom1 editable">
+          <div id="zoom1" class="zoom1 editable">
             <div class="gradient">
               <p class="tochange" id="zoomCompanyAndYear1">Company and year1</p>
               <h1 class="tochange" id="zoomPosition1">Position1</h1>
               <p class="tochange" id="zoomDescription1">Description</p>
+              <button onclick="display1()" class="hide-zoom"><div class="button-text">-</div></button>
             </div>
           </div>
-          <div class="zoom2 editable">
+          <div id="zoom2" class="zoom2 editable">
             <div class="gradient">
               <p class="tochange" id="zoomCompanyAndYear2">Company and year2</p>
               <h1 class="tochange" id="zoomPosition2">Position2</h1>
               <p class="tochange" id="zoomDescription2">Description</p>
+              <button onclick="display2()" class="hide-zoom"><div class="button-text">-</div></button>
             </div>
           </div>
         </div>
