@@ -289,3 +289,64 @@ src: url('./FONTS/Montserrat-Medium.ttf');
   border-radius: 0.12em;
 
 }
+
+.aboutus{
+  background-color: white;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.team-members{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.andy, .dani, .nati{
+  max-width: 33%;
+}
+
+
+.andy h1{
+  font-family: 'Bold';
+}
+
+.andy p{
+  font-family: 'Body-medium';
+  text-align: justify;
+  width: 60%;
+}
+
+.nati h1{
+  font-family: 'Bold';
+}
+
+.nati p{
+  font-family: 'Body-medium';
+  text-align: justify;
+  width: 60%;
+}
+
+.dani h1{
+  font-family: 'Bold';
+}
+
+.dani p{
+  font-family: 'Body-medium';
+  text-align: justify;
+  width: 60%;
+}
+
+#section-title{
+  text-align: center;
+  font-family: 'Bold';
+  font-size: 40px;
+}
+
+.aboutus img{
+  width: 200px;
+  height: auto;
+}
