@@ -15,9 +15,11 @@ editCtrl.getCv = async (req, res) => {
 editCtrl.postNewCv = async (req, res) => {
     const { name, age, userThumbnailPath, title, profile, 
         major, yearMajorFinalization, projectName1, 
-        projectDate1, projectCompany1, projectName2, 
-        projectDate2, projectCompany2, phone, email, 
-        github, linkedin, twitter } = req.body;
+        projectDate1, projectBrief1, projectCompany1, projectName2, 
+        projectDate2, projectBrief2, projectCompany2, phone, email, 
+        github, linkedin, twitter, zoomCompanyAndYear1,
+        zoomCompanyAndYear2,zoomPosition1, zoomPosition2,
+        zoomDescription1, zoomDescription2}  = req.body;
     const newCv = new cvModel({
         name: name,
         age: age,
@@ -28,15 +30,23 @@ editCtrl.postNewCv = async (req, res) => {
         yearMajorFinalization: yearMajorFinalization,
         projectName1: projectName1,
         projectDate1: projectDate1,
+        projectBrief1: projectBrief1,
         projectCompany1: projectCompany1,
         projectName2: projectName2,
         projectDate2: projectDate2,
+        projectBrief2: projectBrief2,
         projectCompany2: projectCompany2,
         phone: phone,
         email: email,
         github: github,
         linkedin: linkedin,
-        twitter: twitter
+        twitter: twitter,
+        zoomCompanyAndYear1: zoomCompanyAndYear1,
+        zoomCompanyAndYear2: zoomCompanyAndYear2,
+        zoomPosition1: zoomPosition1,
+        zoomPosition2: zoomPosition2,
+        zoomDescription1: zoomDescription1,
+        zoomDescription2: zoomDescription2,        
     });
     await newCv.save();
     res.json({message: 'Cv Saved'})
@@ -45,9 +55,11 @@ editCtrl.postNewCv = async (req, res) => {
 editCtrl.putCv = async (req, res) => {
     const { name, age, userThumbnailPath, title, profile, 
         major, yearMajorFinalization, projectName1, 
-        projectDate1, projectCompany1, projectName2, 
-        projectDate2, projectCompany2, phone, email, 
-        github, linkedin, twitter } = req.body;
+        projectDate1, projectBrief1, projectCompany1, projectName2, 
+        projectDate2, projectBrief2, projectCompany2, phone, email, 
+        github, linkedin, twitter, zoomCompanyAndYear1,
+        zoomCompanyAndYear2,zoomPosition1, zoomPosition2,
+        zoomDescription1, zoomDescription2}  = req.body;
     //console.log(req.body)
     //const cvid = req.params.id
     console.log(projectName2)
@@ -61,15 +73,24 @@ editCtrl.putCv = async (req, res) => {
         yearMajorFinalization,
         projectName1,
         projectDate1,
+        projectBrief1,
         projectCompany1,
         projectName2,
         projectDate2,
+        projectBrief2,
         projectCompany2,
         phone,
         email,
         github,
         linkedin,
-        twitter
+        twitter,
+        zoomCompanyAndYear1,
+        zoomCompanyAndYear2,
+        zoomPosition1,
+        zoomPosition2,
+        zoomDescription1,
+        zoomDescription2
+
     });
     res.json({message: 'Note Updated'})
 }

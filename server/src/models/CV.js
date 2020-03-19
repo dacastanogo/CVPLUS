@@ -38,6 +38,10 @@ const cvSchema = new Schema({
         type: String,
         required: true
     },
+    projectBrief1: {
+        type: String,
+        required: true
+    },
     projectCompany1: {
         type: String,
         required: true
@@ -47,6 +51,10 @@ const cvSchema = new Schema({
         required: false
     },
     projectDate2: {
+        type: String,
+        required: false
+    },    
+    projectBrief2: {
         type: String,
         required: false
     },
@@ -77,6 +85,30 @@ const cvSchema = new Schema({
         type: String,
         required: false,
         trim: true
+    },
+    zoomCompanyAndYear1: {
+        type: String,
+        required: false
+    },
+    zoomCompanyAndYear2: {
+        type: String,
+        required: false
+    },
+    zoomPosition1: {
+        type: String,
+        required: false
+    },
+    zoomPosition2: {
+        type: String,
+        required: false
+    },
+    zoomDescription1: {
+        type: String,
+        required: false
+    },
+    zoomDescription2: {
+        type: String,
+        required: false
     },
 });
 
