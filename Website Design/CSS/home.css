@@ -24,13 +24,16 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #0b4c6e;
+  background-color: black;
   font-family: 'Body-medium';
   border-bottom: 3px solid white;
   color: white;
   font-size: 20px;
-  z-index: 3;
-  position: relative;
+}
+
+.h_container img{
+  width: 100px;
+  height: auto;
 }
 
 .main-section{

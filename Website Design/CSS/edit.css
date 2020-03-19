@@ -24,13 +24,16 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #0b4c6e;
+  background-color: black;
   font-family: 'Body-medium';
   border-bottom: 3px solid white;
   color: white;
   font-size: 20px;
-  z-index: 3;
-  position: relative;
+}
+
+.h_container img{
+  width: 100px;
+  height: auto;
 }
 
 .main-section{
@@ -45,7 +48,6 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
 }
 
 .side-menu {
-  display: none;
   height: 100%;
   width: 300px;
   position: fixed;
@@ -57,6 +59,22 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
   padding-top: 20px;
 }
 
+.side-name{
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.side-name h1{
+  font-size: 25px;
+  font-family: 'Bold';
+}
+
+.side-name p{
+  font-size: 20px;
+  font-family: 'Body-medium';
+  margin-top: -10px;
+}
 .side-menu a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -73,6 +91,7 @@ src: url('./FONTS/BebasNeue-Regular.ttf');
 .side-sections{
 transform: translateY(50%);
 }
+
 
 .page-preview-container{
   width: 612px;
