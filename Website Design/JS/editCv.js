@@ -193,7 +193,6 @@ function changetxt(){
   var changer = document.getElementsByClassName("changer");
 
   for (let i = 0; i < changer.length; i++){
-    console.log(changer[i].value, changer[i].name)
     if (changer[i].value.length == 0){
       continue
     }
@@ -204,10 +203,21 @@ function changetxt(){
 
 function createcv(){
   let changer = document.getElementsByClassName("changer");
-  console.log(changer)
   let objfetch = {}
+
   for (let i = 0; i < changer.length; i++){
-    objfetch.changer[i].name =changer[i].value
+    let name = changer[i].name
+    objfetch[`${name}`] = changer[i].value
   }
-  console.log(objfetch)
+  
+  fetch('http://localhost:4000/api/edit/new', {
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    method: 'POST',
+    body: JSON.stringify(objfetch)
+  })
+  .then((data) => data.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(err))
 }

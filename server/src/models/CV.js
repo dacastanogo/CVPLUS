@@ -5,15 +5,7 @@ const cvSchema = new Schema({
         type: String,
         required: true
     },
-    age: {
-        type: Number,
-        required: true
-    },
-    userThumbnailPath: {
-        type: String,
-        required: true,
-        trim: true
-    },
+    
     title: {
         type: String,
         required: true
@@ -22,11 +14,19 @@ const cvSchema = new Schema({
         type: String,
         required: true
     },
-    major: {
+    major1: {
         type: String,
         required: false
     },
-    yearMajorFinalization: {
+    yearMajorFinalization1: {
+        type: String,
+        required: false
+    },
+    major2: {
+        type: String,
+        required: false
+    },
+    yearMajorFinalization2: {
         type: String,
         required: false
     },
