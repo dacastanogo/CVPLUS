@@ -4,7 +4,7 @@ const {getSignUpInfo, postSigupInfo} = require('../controllers/signup_controller
 
 
 router.route('/')
-    .get()
-    .post()
+    .get(getSignUpInfo)
+    .post(postSigupInfo)
 
 module.exports = router;
