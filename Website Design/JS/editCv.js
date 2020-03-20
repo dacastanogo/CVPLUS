@@ -199,6 +199,7 @@ function changetxt(){
 
     changable[i].innerHTML = changer[i].value
   }
+
 }
 
 function createcv(){
