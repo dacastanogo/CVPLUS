@@ -13,7 +13,8 @@ window.addEventListener('load', () => {
             document.getElementById(toChange[i].id).innerHTML = lastCv[`${toChange[i].id}`]
         }
     })
-
+    let uname = lastCv.name
+    document.getElementById("name").innerHTML = uname
 })
 
 function display1() {
@@ -33,3 +34,5 @@ function display1() {
       x.style.display = "none";
     }
   }
+
+  
