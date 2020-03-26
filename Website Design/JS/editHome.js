@@ -1,3 +1,4 @@
+// Brings the information from the edit page and fill the home page 
 window.addEventListener('load', () => {
     let dataCvs 
     console.log('jasefsfseaf')
